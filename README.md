@@ -1,4 +1,4 @@
-* ~/.xsetroot.sh *
+* ~/.xsetroot.sh
 
 ```
 DATETIME=`date '+%A %d %B %H:%M'`
@@ -7,7 +7,7 @@ BATTERYSTATE=$( acpi -b | awk '{ split($5,a,":"); print substr($3,0,2), $4, "["a
 xsetroot -solid gray40 -name "${VOLUME} | ${DATETIME} | ${BATTERYSTATE}"
 ```
 
-* ~/.xprofile *
+* ~/.xprofile
 
 ```
 while true
@@ -27,4 +27,3 @@ done &
 
 - [status monitor](https://dwm.suckless.org/status_monitor/)
 - [slstatus - suckless status](https://tools.suckless.org/slstatus/)
-- [dwmstatus](git://git.suckless.org/dwmstatus)
